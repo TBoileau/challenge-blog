@@ -19,7 +19,7 @@
 * Règle du 5/10/20
 * Interdiction d'utiliser AbstractController
 * Interdiction de râler
-* Maximum 5 requêtes SQL par requête HTTP
+* Maximum 3 requêtes SQL par requête HTTP
 
 ## Résultats
 * Fonctionnalité non implémentée : -3 points
