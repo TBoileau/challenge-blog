@@ -2,6 +2,18 @@
     "composer/package-versions-deprecated": {
         "version": "1.11.99.4"
     },
+    "dama/doctrine-test-bundle": {
+        "version": "6.7",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "4.0",
+            "ref": "56eaa387b5e48ebcc7c95a893b47dfa1ad51449c"
+        },
+        "files": [
+            "config/packages/test/dama_doctrine_test_bundle.yaml"
+        ]
+    },
     "doctrine/annotations": {
         "version": "1.13",
         "recipe": {
@@ -23,6 +35,9 @@
     "doctrine/common": {
         "version": "3.2.1"
     },
+    "doctrine/data-fixtures": {
+        "version": "1.5.1"
+    },
     "doctrine/dbal": {
         "version": "3.2.0"
     },
@@ -43,6 +58,18 @@
             "config/packages/test/doctrine.yaml",
             "src/Entity/.gitignore",
             "src/Repository/.gitignore"
+        ]
+    },
+    "doctrine/doctrine-fixtures-bundle": {
+        "version": "3.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "1f5514cfa15b947298df4d771e694e578d4c204d"
+        },
+        "files": [
+            "src/DataFixtures/AppFixtures.php"
         ]
     },
     "doctrine/doctrine-migrations-bundle": {
@@ -120,6 +147,15 @@
     },
     "phpstan/phpdoc-parser": {
         "version": "1.2.0"
+    },
+    "phpstan/phpstan": {
+        "version": "1.2.0"
+    },
+    "phpstan/phpstan-doctrine": {
+        "version": "1.0.2"
+    },
+    "phpstan/phpstan-symfony": {
+        "version": "1.0.4"
     },
     "phpunit/php-code-coverage": {
         "version": "9.2.10"
@@ -569,6 +605,28 @@
             "config/packages/dev/web_profiler.yaml",
             "config/packages/test/web_profiler.yaml",
             "config/routes/dev/web_profiler.yaml"
+        ]
+    },
+    "symfony/webpack-encore-bundle": {
+        "version": "1.13",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.9",
+            "ref": "d2d1e09675fff3fa4193aa9950a7c39934524a25"
+        },
+        "files": [
+            "assets/app.js",
+            "assets/bootstrap.js",
+            "assets/controllers.json",
+            "assets/controllers/hello_controller.js",
+            "assets/styles/app.css",
+            "config/packages/assets.yaml",
+            "config/packages/prod/webpack_encore.yaml",
+            "config/packages/test/webpack_encore.yaml",
+            "config/packages/webpack_encore.yaml",
+            "package.json",
+            "webpack.config.js"
         ]
     },
     "symfony/yaml": {
